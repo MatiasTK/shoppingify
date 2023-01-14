@@ -14,21 +14,21 @@ function Sidebar({ cartlen }: SidebarProps) {
         <li className="relative flex items-center">
           <span className="absolute w-2 h-10 bg-primary rounded left-[-3px]"></span>
           <div className="mx-auto w-fit cursor-pointer">
-            <Tooltip content="items" placement="right">
+            <Tooltip content="items">
               <span className="material-symbols-outlined">format_list_bulleted</span>
             </Tooltip>
           </div>
         </li>
         <li className="relative flex items-center">
           <div className="mx-auto w-fit cursor-pointer">
-            <Tooltip content="history" placement="right">
+            <Tooltip content="history">
               <span className="material-symbols-outlined">replay</span>
             </Tooltip>
           </div>
         </li>
         <li className="relative flex items-center">
           <div className="mx-auto w-fit cursor-pointer">
-            <Tooltip content="statistics" placement="right">
+            <Tooltip content="statistics">
               <span className="material-symbols-outlined">insert_chart</span>
             </Tooltip>
           </div>
