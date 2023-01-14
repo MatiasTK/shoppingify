@@ -89,7 +89,7 @@ function Home() {
     item: List['categories'][0]['items'][0]
   ) => {
     if (event) {
-      event.target.textContent = 'done';
+      event.currentTarget.textContent = 'done';
     }
     setCart((prevCart) => {
       const inCart = prevCart.categories.findIndex((cat) => cat.id == category.id);
@@ -139,7 +139,7 @@ function Home() {
     });
     if (event) {
       setTimeout(() => {
-        event.target.textContent = 'add';
+        event.currentTarget.textContent = 'add';
       }, 1000);
     }
   };
