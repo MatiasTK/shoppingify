@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="">
+    <a href="https://shoppingify-matiastk.vercel.app/">
       Demo
     </a>
     <span> | </span>
@@ -50,7 +50,7 @@ This is a fullstack challenge, the goal is to create a complete shopping list ap
 
 ### Demos
 
-- [Web Demo]()
+- [Web Demo](https://shoppingify-matiastk.vercel.app/)
 
 ## Features
 
