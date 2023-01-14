@@ -13,6 +13,7 @@ import { FirebaseError } from 'firebase/app';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { List } from '../components/Homepage';
 import { v4 as uuidv4 } from 'uuid';
+import { initialList } from './initialList';
 
 type authProviderProps = {
   children: React.ReactNode;
@@ -120,6 +121,9 @@ export function AuthProvider({ children }: authProviderProps) {
 
     if (docSnap.exists()) {
       setUserData(docSnap.data().lists[0]);
+    } else {
+      setDoc(docRef, initialList, { merge: false });
+      setUserData(initialList.lists[0]);
     }
   };
 

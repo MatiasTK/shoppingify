@@ -208,6 +208,9 @@ function Home() {
             <span className="text-primary font-bold">Shoppingify</span> allows you take your
             shopping list wherever you go
           </h1>
+          <button className="bg-primary rounded p-2 text-white font-bold" onClick={logout}>
+            LOGOUT
+          </button>
           <div className="bg-white shadow-md rounded-xl p-4 flex items-center gap-2">
             <span className="material-symbols-outlined">search</span>
             <input
